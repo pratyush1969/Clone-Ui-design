@@ -1,0 +1,458 @@
+*{
+    margin:0;
+    padding:0;
+}
+nav{
+    background-color: rgb(42, 42, 255);
+    width:100%;
+    height:8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+body{
+    background-color: bisque;
+}
+.nav-left{
+    display:flex;
+    margin:5px;
+    align-items: center;
+}
+.nav-left .logo{
+    width:120px;
+    margin-left: 20px;
+}
+.nav-left ul a img{
+    width:20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.nav-right{
+    display:flex;
+    align-items: center;
+}
+.nav-right .search{
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 245, 242);
+    width:300px;
+    height:30px;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+}
+.nav-right .search img{
+    width:20px;
+    height: 20px;
+    margin-left: 10px;
+   
+}
+.nav-right .search input{
+    outline: none;
+    border: none;
+    text-decoration: none;
+    width:100%;
+    height: 100%;
+    margin-left: 10px;
+}
+.user-icon img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content:'';
+    width:8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top:10px;
+    right:15px;
+    background: rgb(19, 225, 19);
+    border:1px solid #fff
+}
+.settings-menu{
+    position:absolute;
+    width:95%;
+    max-width:380px;
+    background:#fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top:108%;
+    right:3%;
+    max-height: 0;
+    transition: max-height 0.3s;
+    
+}
+.settings-menu-height{
+    max-height:600px
+}
+#dark-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+    border: 1px solid black;
+    width:45px;
+    border-radius: 15px;
+    padding:2px 3px;
+    cursor: pointer;
+    display: flex;
+   
+}
+#dark-btn span{
+    width:18px;
+    height:18px;
+    background: rgb(229, 11, 11);
+    border-radius: 50%;;
+    display:inline-block;
+    transition:margin-left 0.5s,
+    
+}
+.span-move{
+    margin-left: 26px;
+}
+.dark-btn-on{
+    background-color:#000;
+}
+.body-background{
+    background-color: #000;
+    
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+   
+}
+.user-profile img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin:20px
+}
+.user-profile a{
+    text-decoration: none;
+    color:dodgerblue
+}
+
+.container{
+    display:flex;
+   padding:13px 5px
+   
+}
+.left-content{
+    flex-basis: 25%;
+    position:sticky;
+    top:70px;
+    align-self: flex-start;
+}
+.left-content .main-links{
+   margin-left:10px;
+  
+   
+}
+.left-content hr{
+    width:80%;
+    border:1px solid grey
+}
+.left-content .main-links a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.left-content .main-links a:last-child{
+    color:dodgerblue
+}
+.left-content .main-links a img{
+    width:20px;
+    height:20px;
+    margin-right: 20px;
+}
+.left-content .main-links a p{
+    color:dodgerblue
+}
+h4{
+    margin-left:20px;
+    margin-top: 10px;
+    color:rgb(88, 81, 81)
+}
+.shortcut a{
+    margin-top: 20px;
+}
+.shortcut a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+.shortcut a img{
+    width:40px;
+    height:40px;
+    margin-right: 20px;
+}
+
+.right-content{
+    flex-basis: 25%;
+    position:sticky;
+    top:70px;
+    background-color: #fff;
+    align-self: flex-start;
+   
+}
+.right-content .events{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.right-content .events a{
+    text-decoration: none;
+    color:dodgerblue
+}
+
+.eventannounce{
+    display: flex;
+    margin-top: 10px;
+}
+.date{
+    width:60px;
+    box-shadow: 0 0 2px grey;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 254, 254);
+    margin-left:10px;
+    
+}
+.month{
+    background-color: rgb(47, 47, 243);
+    height:25px;
+}
+.month h4{
+    color:white;
+  
+}
+.date h4:first-child{
+    position: relative;
+    left:0px;
+    
+}
+.date h4:last-child{
+    position: relative;
+    left:-8px;
+    
+}
+.description{
+    margin-top: 5px;
+    margin-left:15px;
+}
+.description small i{
+    margin-right: 5px;
+}
+.description a{
+    text-decoration: none;
+    color:rgb(47, 47, 243);
+}
+.advertise{
+    width: 361px;
+    padding: 10px
+}
+.main-content{
+    flex-basis: 47%;
+    
+}
+.story-sec{
+    display: flex;
+    
+}
+.story-sec .story1{
+    margin:10px;
+    border-radius: 8px;
+    width:120px;
+    height:200px;
+    background-image: url("C:\\Users\\PRATYUSH SARKAR\\Downloads\\learning\\mediabook\\status-1.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    color:white
+}
+.story-sec .story1 img,.story2 img,.story3 img,.story4 img,.story5 img{
+    width:40px;
+    height:40px;
+    margin-right:5px;
+    border-radius: 50%;
+    box-shadow:  0 0  0 2px white;
+}
+.story2{
+    margin:10px;
+    border-radius: 8px;
+    width:120px;
+    height:200px;
+    background-image: url("C:\\Users\\PRATYUSH SARKAR\\Downloads\\learning\\mediabook\\status-2.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    color:white
+}
+.story3{
+    margin:10px;
+    border-radius: 8px;
+    width:120px;
+    height:200px;
+    background-image: url("C:\\Users\\PRATYUSH SARKAR\\Downloads\\learning\\mediabook\\status-3.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    color:white
+}
+.story4{
+    margin:10px;
+    border-radius: 8px;
+    width:120px;
+    height:200px;
+    background-image: url("C:\\Users\\PRATYUSH SARKAR\\Downloads\\learning\\mediabook\\status-4.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    color:white
+}
+.story5{
+    margin:10px;
+    border-radius: 8px;
+    width:120px;
+    height:200px;
+    background-image: url("C:\\Users\\PRATYUSH SARKAR\\Downloads\\learning\\mediabook\\status-5.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    color:white
+}
+.my-post{
+    width:100%;
+    background-color: #fff;
+    height:auto;
+   
+}
+.profile{
+    display:flex;
+    align-items: center;
+}
+.profile small{
+    margin-left: 20px;
+}
+.profile img{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    margin:10px
+}
+.my-post input{
+    width:80%;
+    height:50px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    margin-left: 90px;
+
+}
+.my-post .image{
+    display: flex;
+    align-items: center;
+}
+.my-post .image a{
+    color:dodgerblue;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 89px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.my-post .image a p{
+    margin-left: 10px;
+}
+.my-post .image img{
+    width:20px;
+   
+}
+.otherpost{
+    margin-top: 10px;
+    background-color:#fff;
+  
+   
+}
+.otherpost p{
+    margin-left: 10px;
+
+}
+.post-image{
+    margin-top: 5px;
+    margin-left: 10px;
+    width:97.5%;
+    height:auto;
+}
+.likes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.likes a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:black
+}
+.likes a img{
+    width:20px;
+    height:20px
+}
+.btn1{
+    width:200px;
+    height:40px;
+    background-color: #fff;
+    margin-top: 20px;
+    border: none;
+    margin-left: 38%;
+}
+.btn1 a{
+    color:dodgerblue;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    color:rgb(62, 59, 59)
+}
